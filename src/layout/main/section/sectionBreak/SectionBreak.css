@@ -1,0 +1,17 @@
+.section-break {
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #000000;
+    margin: auto auto 120px;
+}
+
+.section-text {
+    position: absolute;
+    border: 2px solid #000000;
+    top: -35px;
+    padding: 0 20px;
+    font-size: 42px;
+    background-color: #ffffff;
+}

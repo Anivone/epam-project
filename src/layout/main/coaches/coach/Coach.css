@@ -1,0 +1,37 @@
+.coach-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+
+    --cardBorder: 1px solid #000000;
+    border: var(--cardBorder)
+}
+
+.coach-card-image {
+    width: 100%;
+    background-size: cover;
+    background-position: center 40%;
+    border-bottom: var(--cardBorder);
+}
+
+.coach-card div {
+    text-align: center;
+    border-left: var(--cardBorder);
+    border-right: var(--cardBorder);
+}
+
+.coach-card .coach-name,
+.coach-card .coach-surname {
+    font-size: 32px;
+}
+
+.coach-dance {
+    color: #5c9cff;
+    font-size: 18px;
+}
+
+.coach-phone {
+    border-bottom: var(--cardBorder);
+    font-size: 18px;
+    padding-bottom: 10px;
+}

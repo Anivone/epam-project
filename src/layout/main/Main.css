@@ -1,0 +1,20 @@
+:root {
+    --mainPadding: 3rem;
+}
+
+main {
+    background: white;
+    position: relative;
+    padding: var(--mainPadding) 0 0 0;
+    margin-top: 100vh;
+    /*height: 100vh;*/
+}
+
+main::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: -100vh;
+}

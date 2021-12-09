@@ -1,0 +1,15 @@
+.intro {
+    display: flex;
+}
+
+.intro img {
+    margin-right: 50px;
+}
+
+.intro-text {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid #000000;
+}
