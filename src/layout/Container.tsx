@@ -4,10 +4,16 @@ import React from "react";
 import Main from "./main/Main";
 
 const Container = () => {
-    return (<>
-        <Header/>
-        <Main/>
-    </>)
+    return (
+        <Routes>
+        <Route path='*' element={
+            <>
+                <Header/>
+                <Main/>
+            </>
+        }/>
+        </Routes>
+    )
 };
 
 export default Container;

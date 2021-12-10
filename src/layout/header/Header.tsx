@@ -3,9 +3,11 @@ import backgroundVideo from "../../assets/video/dance-video2.mp4";
 import backgroundPoster from '../../assets/images/dance-image.png';
 import React, { useEffect, useState } from "react";
 import Nav from "./nav/Nav";
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 const Header = () => {
 
+    const location = useLocation();
     const [displayNav, setDisplayNav] = useState(true);
 
     useEffect(() => {
@@ -18,17 +20,23 @@ const Header = () => {
         });
     }, []);
 
-
     return (
-        <header className='video-header'>
-            <Nav displayNav={displayNav}/>
-            <video id='dance-video' src={backgroundVideo} poster={backgroundPoster} autoPlay loop muted/>
-            <div className='viewport-header'>
-                <h1>
-                    DANCE
-                    <span>SCHOOL</span>
-                </h1>
-            </div>
+        <header className={location.pathname !== '/' ? 'video-header-nav' : 'video-header'}>
+            <Routes>
+                <Route path='*' element={<Nav displayNav={displayNav}/>}/>
+                <Route path='/' element={
+                    <>
+                        <Nav displayNav={displayNav}/>
+                        <video id='dance-video' src={backgroundVideo} poster={backgroundPoster} autoPlay loop muted/>
+                        <div className='viewport-header'>
+                            <h1>
+                                DANCE
+                                <span>SCHOOL</span>
+                            </h1>
+                        </div>
+                    </>
+                }/>
+            </Routes>
         </header>
     )
 

@@ -2,6 +2,7 @@ import './Nav.css';
 import React, { useState } from "react";
 import { IconButton, Menu, MenuItem } from "@mui/material";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom';
 
 const Nav = ({ displayNav }: { displayNav: boolean }) => {
 
@@ -17,12 +18,12 @@ const Nav = ({ displayNav }: { displayNav: boolean }) => {
 
     return (
         <nav style={{ display: displayNav ? 'flex' : 'none' }}>
-            <a href='#' id='logo'>Dance School</a>
+            <Link id='logo' to={'/'}>Dance School</Link>
             <div className='navigation'>
-                <div className='navigation-link' onClick={handleClick}>Link1</div>
-                <div className='navigation-link' onClick={handleClick}>Link2</div>
-                <div className='navigation-link' onClick={handleClick}>Link3</div>
-                <div className='navigation-link' onClick={handleClick}>Link4</div>
+                <Link className='navigation-link' to={'/groups'}>Groups</Link>
+                <Link className='navigation-link' to={'/'}>Schedule</Link>
+                <Link className='navigation-link' to={'/'}>Coaches</Link>
+                <Link className='navigation-link' to={'/'}>About</Link>
                 <div>
                     <IconButton size={"large"} onClick={handleClick}>
                         <AccountCircleIcon/>
@@ -34,9 +35,9 @@ const Nav = ({ displayNav }: { displayNav: boolean }) => {
                 open={open}
                 onClose={handleClose}
             >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My profile</MenuItem>
+                <MenuItem onClick={handleClose}>Settings</MenuItem>
+                <MenuItem onClick={handleClose}>Log Out</MenuItem>
             </Menu>
         </nav>
     );

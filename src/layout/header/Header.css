@@ -4,6 +4,10 @@
     --navOpacity: 1;
 }
 
+.video-header-nav {
+    width: 100vw;
+}
+
 .video-header {
     position: absolute;
     text-align: center;

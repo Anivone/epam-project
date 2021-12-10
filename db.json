@@ -1,0 +1,25 @@
+{
+  "groups": [
+    {
+      "dance": "Break",
+      "imageUrl": "/static/media/break-dance.2e085039.png",
+      "availablePlaces": 20,
+      "participants": 14,
+      "id": 1
+    },
+    {
+      "dance": "Hip-Hop",
+      "imageUrl": "/static/media/hip-hop.2282474e.jpeg",
+      "availablePlaces": 15,
+      "participants": 7,
+      "id": 2
+    },
+    {
+      "dance": "Twerk",
+      "imageUrl": "/static/media/twerk.4751d065.jpeg",
+      "availablePlaces": 8,
+      "participants": 2,
+      "id": 3
+    }
+  ]
+}

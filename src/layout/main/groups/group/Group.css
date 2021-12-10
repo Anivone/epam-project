@@ -1,0 +1,55 @@
+.group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px dashed #69a2ff;
+    margin-bottom: 100px;
+}
+
+.group-image {
+    position: relative;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-image img {
+    border: none;
+    width: 100%;
+    object-fit: contain;
+}
+
+.group-dance {
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.group-information {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-participate {
+    padding: 0 40px;
+}
+
+.group-participate button {
+    height: 75px;
+}
+
+.group-information div:first-child {
+    font-size: 32px;
+}
+
+.group-information div:last-child {
+    font-size: 42px;
+    font-weight: bold;
+}

@@ -2,7 +2,7 @@
     --mainPadding: 3rem;
 }
 
-main {
+.landing {
     background: white;
     position: relative;
     padding: var(--mainPadding) 0 0 0;
@@ -10,11 +10,18 @@ main {
     /*height: 100vh;*/
 }
 
-main::before {
+.landing::before {
     content: "";
     width: 100vw;
     height: 100vh;
     position: absolute;
     left: 0;
     top: -100vh;
+}
+
+.main-container {
+    display: flex;
+    padding: 5rem 3rem;
+    justify-content: center;
+    align-items: center;
 }

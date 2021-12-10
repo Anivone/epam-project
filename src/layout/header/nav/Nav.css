@@ -21,14 +21,13 @@ nav {
     display: flex;
 }
 
-.navigation div {
+.navigation div,
+.navigation-link {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.navigation-link {
-    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
 }
